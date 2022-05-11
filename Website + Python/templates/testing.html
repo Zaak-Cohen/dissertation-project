@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+<style>
+
+
+@keyframes loadinganimation{
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(50deg);
+  }
+}
+
+html {
+  height: 100%;
+  margin:  auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#line1 {
+  border-bottom: 2px dotted;
+  border-width: 2px;
+  width: 1500px;
+  border-height: 2px;
+  top: 255px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+#line2 {
+  border-bottom: 1px;
+  border-width: 1px;
+  width: 1500px;
+  border-height: 1px;
+  top: 580px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+#line3 {
+  border-bottom: 1px solid;
+  border-width: 1px;
+  width: 1500px;
+  border-height: 1px;
+  top: 880px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+
+@keyframes opac{
+  from {
+    opacity:  0;
+  }  
+  to {
+    opacity:  1;  
+  }
+}
+
+
+#fade {
+  animation: opac 1s;
+
+}
+
+#fade2 {
+  animation: opac 5s;
+}
+
+#fade3 {
+  animation: opac 7s;
+}
+
+.banner {
+  height: 50px;
+  width: 100%;
+  left: 0;
+  background-color: #f57242;
+  max-width: 10000px;
+  position: fixed;
+  z-index: 100;
+  top: 0%;
+}
+
+#para {
+   font: Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   position: absolute;
+   top: 300px;
+}
+
+#para2 {
+   font: Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   top: 1100px;
+   position: absolute;
+
+}
+
+
+#heading1 {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 150px;
+  font-size: 50px;
+  position: absolute;
+  
+}
+
+#heading2 {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 500px;
+  
+}
+
+#heading3 {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 800px;
+  
+}
+
+#centerpiece1 {
+  left: 3%;
+  position: absolute;
+  padding-left: 10%;
+  padding-right: 100%;
+}
+
+
+.bottombanner {
+  height: 30px;
+  width: 100%;
+  left: 0;
+  max-width: 2000px;
+  position: absolute;
+  top: 1300px;
+  bottom:  0;
+  opacity: 30%;
+}
+
+.sidebannerleft {
+  background-image: linear-gradient(45deg, rgba(255,69,0,0.5) 50%,transparent 50%), linear-gradient(-45deg, transparent 50%, rgba(255,136,0,0.5) 50%);
+  background-size:70px 70px;
+  height: 100%;
+  width: 7%;
+  left: 0px;
+  opacity: 5%;
+  z-index: 21;
+  position: fixed;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+
+.sidebannerright {
+  background-image: linear-gradient(45deg, rgba(255,69,0,0.5) 50%,transparent 50%), linear-gradient(-45deg, transparent 50%, rgba(255,136,0,0.5) 50%);
+  background-size:70px 70px;
+  height: 100%;
+  width: 7%;
+  right: 0px;
+  position: fixed;
+  opacity: 5%;
+  z-index: 20;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.btn {
+  background-color: #f57242;
+  position:absolute;
+  right: 250px;
+  top:0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1}
+
+
+.btn2 {
+  background-color: #f57242;
+  position:absolute;
+  right:500px;
+  top: 0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn2:hover {opacity: 1}
+
+.btn3 {
+  background-color: #f57242;
+  position:absolute;
+  right: 750px;
+  top: 0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn3:hover {opacity: 1}
+
+
+.btn4 {
+  background-color: #f57242;
+  position:absolute;
+  right:1000px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  top:0px;
+}
+
+
+.btn4:hover {opacity: 1}
+
+
+#form1button {
+  border-color: #f57242;
+  position:absolute;
+  border: none;
+  color: black;
+  padding: 7px 7px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+
+#form1button:hover {opacity: 1}
+
+#form2button {
+  border-color: #f57242;
+  position:absolute;
+  border: none;
+  border-bottom: 1px;
+  border-top: 1px;
+  color: black;
+  padding: 7px 7px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+
+#form2button:hover {opacity: 1}
+
+#form1 {
+   left: 190px;
+   top: 600px;
+   position: absolute;
+
+}
+
+#result {
+  position: absolute;
+  left: 220px;
+  top: 650;
+}
+
+#result2 {
+  position: absolute;
+  left: 220px;
+  top: 1100;
+  width: 500px;
+}
+
+#form2 {
+   left: 190px;
+   top: 900px;
+   position: absolute;
+}
+
+
+#ipform1:focus {
+  width: 75%;
+  border: none;
+}
+
+
+#ipform2 {
+  width: 700px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  transition: width 0.7s ease-in-out;
+}
+
+#ipform2:focus {
+  width: 75%;
+  border: none;
+}
+
+#toptext {
+  top: -10px;
+  left: 200px;
+  position: absolute;
+  font: Arial;
+  font-family: sans-serif;
+  opacity: 50%;
+
+}
+
+#test {
+  border: 5px solid;
+  width: 10px;
+  height: 10px;
+  top: 620px;
+  left: 375px;
+  border-radius: 50%;
+  border-color: #f57242 transparent transparent;
+  animation:  loadinganimation 2s linear infinite;
+  position: absolute;
+  opacity: 0;
+
+}
+
+#test2 {
+  border: 5px solid;
+  width: 10px;
+  height: 10px;
+  top: 920px;
+  left: 375px;
+  border-radius: 50%;
+  border-color: #f57242 transparent transparent;
+  animation:  loadinganimation 2s linear infinite;
+  position: absolute;
+  opacity: 0;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebannerleft"></div>
+<div class="sidebannerright"></div>
+
+<div class="banner">
+    <h2 id="toptext"> MQTT Testing Kit</h2>
+   <center>
+
+
+
+      <button class="btn" onClick=location.href="about" >about</button>
+
+
+
+      <button class="btn2" onClick=location.href="testing" >testing</button>
+
+
+
+      <button class="btn3"  onClick=location.href="education" >education</button>
+
+
+      <button class="btn4"  onClick=location.href="/" >home</button>
+    </center>
+  </div>
+
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+
+
+<div id="centerpiece1">
+  <div id = "fade">
+      <h1 id="heading1">Testing</h1>
+  </div>
+
+
+<!-- Main body of text -->
+
+    <div id="fade2"> 
+
+    <h1 id="heading2">Form 1</h1>
+
+    <p id = "para">
+    This page includes two nodes for testing, the first is for port scanning, a function that takes a specific IP, and tests to find if that client has the standard MQTT port open. <br>
+    <br>
+    To use the node below node, input your testing clients IP, your device/webpage's IPv4 will look like this: <b>"128.212.2.88"</b>
+    <br>
+    <br>
+    You can find your machine or pages hostname/IP by going into command prompt, and typing <b>"ipconfig /all"</b>
+    <br>
+    Or through any other relevant methods.
+    <br>
+    <br>
+    Please only enter an IP/hostname into the node. Both testing forms are repeatable.
+    </p>
+
+     <p id = "para2">
+    This form follows similar principles to the last, if your IP was found to have an open MQTT port, or if you want to check whether the client is vulnerable<br>
+    anyway, please put your IP into the form below, and press submit.
+    <br>
+    <br>
+    <br>
+    Please note, form 2 may take some time to complete, please be patient.
+    <br>
+    <br>
+    <br>
+    Results will appear below the forms.
+    </p>
+
+    <h1 id="heading3">Form 2</h1>
+    </div>
+
+<span id="test"></span>
+<span id="test2"></span>
+
+
+
+<div id="fade3">
+
+
+<apdiv id="form1">
+    <label for="IP/hn">IP Address/Hostname:</label><br>
+    <input  type="text" id="IP/hn" name="IP/hn"><br>
+    <br>
+<input  id="form1button" type="button" value = "submit" onclick = "submit()">
+</br>
+</br>
+<p id = "result"></p>
+
+
+</apdiv>
+
+
+
+<apdiv id="form2">
+  
+
+    <label  for="IP">IP Address</label><br>
+    <input  type="text" id="IP" name="IP"><br>
+    <br>
+<input  id = "form2button" type="button" value = "submit" onclick = "submit2()">
+
+<p id = "result2"></p>
+
+
+</apdiv>
+
+</div>
+
+<script>
+
+function submit(){
+  var http = new XMLHttpRequest();
+  http.onreadystatechange = onresponse;
+  http.open("POST", "/search", true);
+  http.setRequestHeader("Content-Type", "application/json");
+  http.setRequestHeader("Accept", "application/json");
+  var details = {
+    "loc": document.getElementById('IP/hn').value
+  };
+  http.send(JSON.stringify(details));
+  console.log(JSON.stringify(details));
+  document.getElementById("test1").style.opacity=1;
+}
+
+function onresponse(){
+  if (this.readyState == XMLHttpRequest.DONE && this.status == 200){
+    console.log(this.responseText);
+    var data = JSON.parse(this.responseText);
+    var value = data["value"]
+    if (value) { 
+      document.getElementById("result").innerHTML = "open"
+    }
+    else {
+      document.getElementById("result").innerHTML = "closed"
+    }
+    document.getElementById("test1").style.opacity=0;
+  }
+}
+
+function submit2(){
+  var http = new XMLHttpRequest();
+  http.onreadystatechange = onresponse2;
+  http.open("POST", "/check", true);
+  http.setRequestHeader("Content-Type", "application/json");
+  http.setRequestHeader("Accept", "application/json");
+  var details = {
+    "loc": document.getElementById('IP').value
+  };
+  http.send(JSON.stringify(details));
+  console.log(JSON.stringify(details));
+   document.getElementById("test2").style.opacity=1;
+}
+
+function onresponse2(){
+  if (this.readyState == XMLHttpRequest.DONE && this.status == 200){
+    console.log(this.responseText);
+    var data = JSON.parse(this.responseText);
+    var value = data["value"]
+    if (value) { 
+      document.getElementById("result2").innerHTML = "Has a vulnerability"
+    }
+    else {
+      document.getElementById("result2").innerHTML = "Does not have a vulnerability, or IP not found within Shodan's database"
+    }
+  }
+   document.getElementById("test2").style.opacity=0;
+}
+
+</script>
+
+<div class = "bottombanner"></div>
+
+</body>
+</html>

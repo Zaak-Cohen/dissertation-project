@@ -1,0 +1,983 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+<style>
+
+@keyframes opac{
+  from {
+    opacity:  0;
+  }  
+  to {
+    opacity:  1;  
+  }
+}
+
+
+@keyframes infomove {
+  from {
+    left: 575px;
+  }
+  to {
+    left: 725px;
+  }
+}
+
+@keyframes infomovereverse {
+  from {
+    left: 725px;
+  }
+  to {
+    left: 525px;
+  }
+}
+
+
+@keyframes infomovebrok1 {
+  from {
+    top: 1250px;
+  }
+  to {
+    top: 1375px;
+  }
+}
+
+@keyframes infomovebrok1R {
+  from {
+    top: 1375px;
+  }
+  to {
+    top: 1250px;
+  }
+}
+
+@keyframes infomovebrok2 {
+  from {
+    left: 325px;
+  }
+  to {
+    left: 535px;
+  }
+}
+
+@keyframes infomovebrok2R {
+  from {
+    left: 535px;
+  }
+  to {
+    left: 325px;
+  }
+}
+
+@keyframes infomovebrok3 {
+  from {
+    left: 700px;
+  }
+  to {
+    left: 525px;
+  }
+}
+
+@keyframes infomovebrok3R {
+  from {
+    left: 525px;
+  }
+  to {
+    left: 720px;
+  }
+}
+
+@keyframes infomovebrok4 {
+  from {
+    top: 1375px;
+  }
+  to {
+    top: 1520px;
+  }
+}
+
+@keyframes infomovebrok4R {
+  from {
+    top: 1520px;
+  }
+  to {
+    top: 1355px;
+  }
+}
+
+
+html {
+  height: 100%;
+  margin:  auto;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+
+
+#fade {
+  animation: opac 1s;
+
+}
+
+#fade2 {
+  animation: opac 5s;
+}
+
+#fade3 {
+  animation: opac 7s;
+}
+
+#fade4 {
+  animation: opac 10s;
+}
+
+
+#line1 {
+  border-bottom: 2px dotted;
+  border-width: 2px;
+  width: 1500px;
+  border-height: 2px;
+  top: 255px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+#line2 {
+  border-bottom: 1px;
+  border-width: 1px;
+  width: 1500px;
+  border-height: 1px;
+  top: 330px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+#line3 {
+  border-bottom: 1px solid;
+  border-width: 1px;
+  width: 1500px;
+  border-height: 1px;
+  top: 790px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+#line4 {
+  border-bottom: 1px solid;
+  border-width: 1px;
+  width: 1500px;
+  border-height: 1px;
+  top: 1890px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+
+.infog1 {
+  height: 100px;
+  width: 100px;
+  background-color: #fcba03;
+  border-radius: 50%;
+  display: inline;
+  top: 800px;
+  left: 500px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+.infog2 {
+  height: 100px;
+  width: 100px;
+  background-color: #fcba03;
+  border-radius: 50%;
+  display: inline;
+  top: 800px;
+  left: 700px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+
+
+
+.publisher {
+  height: 10px;
+  width: 10px;
+  background-color: #ff9d00;
+  border-radius: 50%;
+  display: inline;
+  top: 923px;
+  left: 650px;
+  position: absolute;
+  z-index: 20;
+  animation: infomove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.subscriber {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline;
+  top: 873px;
+  left: 650px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovereverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.infog1 {
+  height: 100px;
+  width: 100px;
+  background-color: #42adf5;
+  border-radius: 50%;
+  display: inline;
+  top: 850px;
+  left: 500px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+.infog2 {
+  height: 100px;
+  width: 100px;
+  background-color: #42adf5;
+  border-radius: 50%;
+  display: inline;
+  top: 850px;
+  left: 700px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+
+
+
+.publisher1 {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline;
+  top: 823px;
+  left: 650px;
+  position: absolute;
+  z-index: 20;
+  animation: infomove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.subscriber2 {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline;
+  top: 773px;
+  left: 650px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovereverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.infogbrok {
+  height: 100px;
+  width: 100px;
+  background-color: #42adf5;
+  border-radius: 50%;
+  display: inline;
+  top: 1200px;
+  left: 500px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+.infogbrok2 {
+  height: 100px;
+  width: 100px;
+  background-color: #42adf5;
+  border-radius: 50%;
+  display: inline;
+  top: 1350px;
+  left: 300px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+.infogbrok3 {
+  height: 100px;
+  width: 100px;
+  background-color: #42adf5;
+  border-radius: 50%;
+  display: absolute;
+  top: 1350px;
+  left: 700px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+.infogbrok4 {
+  height: 100px;
+  width: 100px;
+  background-color: #42adf5;
+  border-radius: 50%;
+  display: absolute;
+  top: 1500px;
+  left: 500px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+.broker {
+  height: 100px;
+  width: 100px;
+  background-color: #ff9d00;
+  border-radius: 50%;
+  display: absolute;
+  top: 1350px;
+  left: 500px;
+  position: absolute;
+  border-style: dashed;
+  border-width: 1px;
+  z-index: 21;
+}
+
+
+.infomovebrok1 {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline;
+  top: 1350px;
+  left: 570px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovebrok1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.infomovebrok1R {
+  height: 10px;
+  width: 10px;
+  background-color: #ff9d00;
+  border-radius: 50%;
+  display: inline;
+  top: 1300px;
+  left: 525px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovebrok1R;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.infomovebrok2 {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline;
+  top: 1380px;
+  left: 575px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovebrok2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.infomovebrok2R {
+  height: 10px;
+  width: 10px;
+  background-color: #ff9d00;
+  border-radius: 50%;
+  display: absolute;
+  top: 1420px;
+  left: 590px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovebrok2R;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+
+.infomovebrok3 {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline;
+  top: 1380px;
+  left: 570px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovebrok3;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.infomovebrok3R {
+  height: 10px;
+  width: 10px;
+  background-color: #ff9d00;
+  border-radius: 50%;
+  display: inline;
+  top: 1420px;
+  left: 525px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovebrok3R;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+
+.infomovebrok4 {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline;
+  top: 1350px;
+  left: 570px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovebrok4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.infomovebrok4R {
+  height: 10px;
+  width: 10px;
+  background-color: #ff9d00;
+  border-radius: 50%;
+  display: inline;
+  top: 1300px;
+  left: 525px;
+  position: absolute;
+  z-index: 20;
+  animation: infomovebrok4R;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+
+
+.banner {
+  height: 100px;
+  width: 100%;
+  left: 0;
+  background-color: #f57242;
+  max-width: 10000px;
+  position: fixed;
+  z-index: 100;
+  top: 0%;
+}
+
+#centerpiece1 {
+  left: 3%;
+  position: relative;
+  padding-left: 10%;
+  padding-right: 30%;
+}
+
+
+
+.sidebannerleft {
+  background-image: linear-gradient(45deg, rgba(255,69,0,0.5) 50%,transparent 50%), linear-gradient(-45deg, transparent 50%, rgba(255,136,0,0.5) 50%);
+  background-size:70px 70px;
+  height: 100%;
+  width: 7%;
+  left: 0px;
+  opacity: 5%;
+  z-index: 21;
+  position: fixed;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+
+.sidebannerright {
+  background-image: linear-gradient(45deg, rgba(255,69,0,0.5) 50%,transparent 50%), linear-gradient(-45deg, transparent 50%, rgba(255,136,0,0.5) 50%);
+  background-size:70px 70px;
+  height: 100%;
+  width: 7%;
+  right: 0px;
+  position: fixed;
+  opacity: 5%;
+  z-index: 20;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+
+
+
+#para {
+   font: Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   top: 350px;
+   position: absolute;
+}
+
+#para2 {
+   font:  Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   top: 400px;
+   position: absolute;
+
+}
+
+#para3 {
+   font:  Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   top: 800px;
+   position: absolute;
+   
+}
+
+#para4 {
+   font:  Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   top: 1900px;
+   position: absolute;
+   
+}
+
+
+#heading {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 150px;
+  font-size: 50px;
+  
+}
+
+#heading2 {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 700px;
+  
+}
+
+#heading3 {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 1800px;
+  
+}
+
+#headingsecurity {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 250px;
+}
+
+.banner {
+  height: 50px;
+  width: 100%;
+  left: 0;
+  background-color: #f57242;
+  max-width: 10000px;
+  position: fixed;
+  z-index: 100;
+  top: 0%;
+}
+
+.bottombanner {
+  height: 30px;
+  width: 100%;
+  left: 0;
+  max-width: 5000px;
+  position: absolute;
+  top: 2200px;
+  bottom:  0;
+  opacity: 30%;
+}
+
+
+.btn {
+  background-color: #f57242;
+  position:absolute;
+  right: 250px;
+  top:0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1}
+
+
+.btn2 {
+  background-color: #f57242;
+  position:absolute;
+  right:500px;
+  top: 0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn2:hover {opacity: 1}
+
+.btn3 {
+  background-color: #f57242;
+  position:absolute;
+  right: 750px;
+  top: 0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn3:hover {opacity: 1}
+
+
+.btn4 {
+  background-color: #f57242;
+  position:absolute;
+  right:1000px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  top:0px;
+}
+
+.btn4:hover {opacity: 1}
+
+.brokerbtn {
+  background-color: white;
+  color: grey;
+  position:absolute;
+  left: 550px;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  top:1750px;
+}
+
+.brokerbtn:hover {color: #f57242}
+
+#bottominfo {
+  position: fixed;
+  top: 96.5%;
+  right: 10%;
+  font:  Arial;
+  font-family: sans-serif;
+}
+
+#toptext {
+  top: -10px;
+  left: 200px;
+  position: absolute;
+  font: Arial;
+  font-family: sans-serif;
+  opacity: 50%;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="banner">
+    <h2 id="toptext"> MQTT Testing Kit</h2>
+   <center>
+
+
+
+      <button class="btn" onClick=location.href="about" >about</button>
+
+
+
+      <button class="btn2" onClick=location.href="testing" >testing</button>
+
+
+
+      <button class="btn3"  onClick=location.href="education" >education</button>
+
+
+      <button class="btn4"  onClick=location.href="/" >home</button>
+    </center>
+  </div>
+
+  <div class="sidebannerleft"></div>
+  <div class="sidebannerright"></div>
+
+
+
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+<div id="line4"></div>
+
+<div id="fade">
+
+<div id="centerpiece1">
+
+  <div id = "fade">
+
+
+    <h1 id="heading">Education</h1>
+    
+  </div>
+
+<!-- Main body of text -->
+
+   <div id="fade2"> 
+    
+    <h1 id="headingsecurity">Security</h1>
+
+    <p id = "para">
+      There are a few ways to increase MQTT security in networks:
+      <br>
+      <br>
+      - Using Secure MQTT (SMQTT)
+      <br>
+      <br>
+      - Using encryption, this can be done via SSL (have a hover) or TLS (have a hover), but this adds a significant overhead to MQTT packets
+      <br>
+      <br>
+      - Using secure brokers
+      <br>
+      <br>
+      - Proper configuration
+      <br>
+      <br>
+      Brokers are the most practicable solution for bigger organisations, or anyone looking to use MQTT to communicate with other networks over long<br>
+      distances.
+      <br>
+      <br>
+      Brokers however can also be improperly configurated, that is why it is best to use all of the methods above to achieve optimal security,<br>
+      most brokers will already have these security mechanisms in place, however, its always best to check outside sources for reliability and testing reviews.
+      </p>
+       
+    </div>
+    <div id="fade3">
+        <br>
+        <br>
+        <h1 id="heading2">What are Brokers?</h1>
+        <p id="para3">
+        Below is a demonstration of how IOT (internet of things) devices communicate through MQTT without brokers:
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        The publishing is shown in the blue dot, while the subscribing is shown in a yellow dot.<br>
+        <br>
+        As can be seen above, it is a 1-1 process, and due to MQTT's inherent lack of security protocols built in <i>(more on that on the <b>about</b> page)</i> <br>
+        It can be easy to find security vulnerabilties for attackers.<br>
+        Another issue is that 1-1 communication of devices with MQTT is incredibly hard to do long distance, and is not scalable. It works in small networks,
+        <br> but it couldn't work on a large scale. <br>
+        <br>
+        Thats why brokers exist; brokers are entities that filter through publish/subscribe packets, and send them to their relevant locations, a middle-man of communications.<br>
+        Brokers not only help the scalability of MQTT networks, but also increase the security most of the time too.
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Above is an animation to show how MQTT devices would interact with a broker, on top of greater scalability, brokers offer more reliable<br>
+        and secure connections, however, some brokers can also be inproperly configured, thus this test kit can be used to test whether your<br>
+        devices are publically visible and furthermore, insecure.
+        <br>
+        <br>
+        There are many good brokers available for use, one of the most popular is <b>Mosquitto</b>, click below to go to their webpage:
+        </p>
+
+        <button class="brokerbtn" onClick = "location.href='https://mosquitto.org/'">Mosquitto Webpage</button>
+
+        <!-- animation -->
+
+        <span class = "infog1">
+          <br> <b><center>IOT</center>
+          <br>
+          <center>Device</center></b></span>
+        <span class = "infog2"><br> <b><center>IOT</center>
+          <br>
+          <center>Device</center></b></span>
+        <span class = "publisher"></span>
+        <span class = "subscriber"></span>
+     
+
+        <span class = "infogbrok">
+          <br><b> <center>IOT</center>
+          <br>
+          <center>Device</center></b></span>
+        <span class = "infogbrok2"><br> <b><center>IOT</center>
+          <br> 
+          <center>Device</center></b></span>
+         <span class = "infogbrok3">
+          <br> <b><center>IOT</center>
+          <br>
+          <center>Device</center></b></span>
+        <span class = "infogbrok4"><br> <b><center>IOT</center>
+          <br>
+          <center>Device</center></b></span>
+        <span class = "broker">
+            <br>
+            <br><b>
+            <center>Broker</center></b>
+        </span>
+      <span class = "infomovebrok1"></span>
+        <span class = "infomovebrok1R"></span>
+      <span class = "infomovebrok2"></span>
+      <span class = "infomovebrok2R"></span>
+      <span class = "infomovebrok3"></span>
+        <span class = "infomovebrok3R"></span>
+      <span class = "infomovebrok4"></span>
+        <span class = "infomovebrok4R"></span>
+   
+
+
+    </div>
+    <div id="fade4">
+        <br>
+        <br>
+        <h1 id="heading3">What is Shodan?</h1>
+        <p id="para4">
+        <b>Shodan</b> is an <i>open-source intelligence</i> search engine, one of its purposes is to periodically scan for open ports; similar to the first<br>
+        function of this test kit, found in the <b>testing</b> page.<br>
+        <br>
+        <b>Shodan</b> can then decipher information gathered from any open/misconfigured ports, and access whether they are vulnerable, or not.<br>
+        This test kit acts as a localised version of </b>Shodan's</b> capabilties, targeting specific inputted machines, and cross referencing that with <b>Shodan's</b> API. 
+        <br>
+        <br>
+        Individuals may want to use this test kit to see whether their locally hosted <b>servers</b> or <b>personal devices</b> are visible<br>
+        to others, and then further more whether shodan has their devices tagged as vulnerable on its database.
+
+        </p>
+    
+    
+    </div>
+</div>
+</div>
+
+<div class="bottombanner">
+    
+    <center>
+
+      <p id="bottominfo"> <i> Version: 2.0 </i> </p>
+
+    </center>
+
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+</html>

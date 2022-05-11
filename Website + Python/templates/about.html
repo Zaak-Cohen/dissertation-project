@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+
+
+<style>
+
+
+
+html {
+  height: 100%;
+  margin:  auto;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+
+@keyframes opac{
+  from {
+    opacity:  0;
+  }  
+  to {
+    opacity:  1;  
+  }
+}
+
+
+#fade {
+  animation: opac 1s;
+
+}
+
+#fade2 {
+  animation: opac 5s;
+}
+
+#fade3 {
+  animation: opac 7s;
+}
+
+#fade4 {
+  animation: opac 10s;
+}
+
+#line1 {
+  border-bottom: 2px dotted;
+  border-width: 2px;
+  width: 1500px;
+  border-height: 2px;
+  top: 255px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+#line2 {
+  border-bottom: 1px;
+  border-width: 1px;
+  width: 1500px;
+  border-height: 1px;
+  top: 385px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+#line3 {
+  border-bottom: 1px;
+  border-width: 1px;
+  width: 1500px;
+  border-height: 1px;
+  top: 855px;
+  left: 200px;
+  border-style: solid;
+  position: absolute;
+  opacity: 10%;
+
+}
+
+
+.banner {
+  height: 50px;
+  width: 100%;
+  left: 0;
+  background-color: #f57242;
+  max-width: 10000px;
+  position: fixed;
+  z-index: 100;
+  top: 0%;
+}
+
+
+#centerpiece1 {
+  left: 3%;
+  position: relative;
+  padding-left: 10%;
+  padding-right: 30%;
+}
+
+
+
+
+.bottombanner {
+  height: 30px;
+  width: 100%;
+  left: 0;
+  max-width: 5000px;
+  position: absolute;
+  top: 1200px;
+  bottom:  0;
+  opacity: 30%;
+}
+
+
+
+#para {
+   font: Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   top: 400px;
+   position: absolute;
+}
+
+#para2 {
+   font: Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   top: 450px;
+   position: absolute;
+
+}
+
+#para3 {
+   font: Arial;
+   font-family: sans-serif;
+   font-size: 15px;
+   top: 875px;
+   position: absolute;
+   
+}
+
+
+#headingmain {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 150px;
+  font-size: 50px;
+  
+}
+
+#heading {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 300px;
+  
+}
+
+#heading2 {
+  font: Arial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 750px;
+  
+}
+
+
+
+.btn {
+  background-color: #f57242;
+  position:absolute;
+  right: 250px;
+  top:0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1}
+
+
+.btn2 {
+  background-color: #f57242;
+  position:absolute;
+  right:500px;
+  top: 0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn2:hover {opacity: 1}
+
+.btn3 {
+  background-color: #f57242;
+  position:absolute;
+  right: 750px;
+  top: 0px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn3:hover {opacity: 1}
+
+
+.btn4 {
+  background-color: #f57242;
+  position:absolute;
+  right:1000px;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  top:0px;
+}
+
+.btn4:hover {opacity: 1}
+
+#bottominfo {
+  position: fixed;
+  top: 96.5%;
+  right: 10%;
+  font:  Arial;
+  font-family: sans-serif;
+}
+#toptext {
+  top: -10px;
+  left: 200px;
+  position: absolute;
+  font: Arial;
+  font-family: sans-serif;
+  opacity: 50%;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- Banner + buttons -->
+
+<div class="banner">
+    <h2 id="toptext"> MQTT Testing Kit</h2>
+  <center>
+
+
+
+      <button class="btn" onClick=location.href="about" >about</button>
+
+
+
+      <button class="btn2" onClick=location.href="testing" >testing</button>
+
+
+
+      <button class="btn3"  onClick=location.href="education" >education</button>
+
+
+      <button class="btn4"  onClick=location.href="/" >home</button>
+    </center>
+  </div>
+
+
+  <div class="sidebannerleft"></div>
+  <div class="sidebannerright"></div>
+
+<!-- Header, seperated so it fades in quicker -->
+
+
+<div id="centerpiece1">
+  <div id="sizingcont">
+    <div id = "fade">
+
+       <h1 id="headingmain">About</h1>
+
+      <h1 id="heading">Intentions of the Project</h1>
+ 
+    </div>
+
+<!-- Main body of text -->
+
+    <div id="fade2"> 
+  
+    <p id = "para">
+      The intention of this project is to allow a user to indentify whether their device or network is suseceptable to Shodans port scanning methodology, and then even
+      further, <br>
+      to allow a user to check whether their device or network is listed in shodans database, and whether it is listed as vulnerable or not.<br>
+      <br>
+      <br>
+      <br>
+      First off, the page uses a similar technique to Shodan, scanning to check if a specific port is open, or not.<br>
+      The port for MQTT devices is "1883", so the program can check specifically to see whether this port is open or not, if it is, the program will respond accordingly.
+       <br>
+      <br>
+      <br>
+      The main functionality of this program is to use Shodan's API and filters function to take a query the user inputs (ip address)
+      and find <br>
+      out two things:<br>
+      <br>
+      -Does a given device or webpage have an open MQTT port?
+      <br>
+      <br>
+      <br>-Is that device listed in <b>Shodan's</b> database
+      <br>If it is, would it be considered vulnerable by shodan's OSINT system?
+      </p>
+       
+    </div>
+    <div id="fade3">
+        <br>
+        <br>
+        <h1 id="heading2">What is MQTT?</h1>
+        <p id="para3">
+        Message Queuing Telemetry Transport is a publish-subscribe networking protocol, this protocol can be used over any protocol that provides <br>
+        ordered, lossless, bi-directional connections, but is traditionally used over transmission control protocol (TCP) or internet protocol-based networks.
+        <br>
+        <br>
+        It provides a low processing power solution to long-distance IoT device communicaiton; most networks include a broker, a middle-man that can sort and send<br>
+        "topics" that are needed by IoT devices to other IoT devices.<br>
+        <br>
+        These topics are essentially a set of rules or tables that order pieces of data, these are sent intially by IoT devices as "submit packets"<br>
+        <br>
+        Once the target IoT device recieves a "submit packet", it can fill out this data, and send it back the same route through a "publishing packet".
+        </p>
+    </div>
+ 
+    </div>
+</div>
+</div>
+  
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+
+<!-- Bottom banner for version -->
+
+<div class="bottombanner">
+    
+    <center>
+
+      <p id="bottominfo"> <i> Version: 2.0 </i> </p>
+
+    </center>
+
+</div>
+
+
+</body>
+</html>
